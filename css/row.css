@@ -1,0 +1,36 @@
+.row:after{
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.row {display: inline-block; }
+/* start commented backslash hack \*/
+* html .row {height: 1%; }
+.row { display: block; }
+/* close commented dackslash hack*/
+.d-fl{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.fd-c{
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.jc-cen {justify-content: center;}
+.jc-sb {justify-content: space-between;}
+.jc-sa {justify-content: space-around;}
+
+.ai-cen {
+	-ms-align-items: center;
+	align-items: center;
+}
+.text-cen {text-align: center;}
